@@ -1,0 +1,14 @@
+html, body {
+	height: 100%;
+	width: 100%;
+}
+header {
+	background-size: cover;
+	display: inline;
+}
+#left {
+	float: left;
+}
+#right {
+	float: right;
+}
