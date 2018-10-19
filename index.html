@@ -1,81 +1,94 @@
+<!--<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>-->
 <!DOCTYPE html>
 <html>
   <head>
     <title>Product Landing Page</title>
     <link rel="stylesheet" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps|Open+Sans" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- b/c the sheet is in the same folder as the html file, you don't need any other path, 
 		just the file name. Remove the link before putting back into codepen -->		
   </head>
-  <body class="">
+  <body>
 	<header id="header">
 		<nav id="nav-bar">
 			<div id="left">
-				<a id="home">Treasured Moments Wedding Planning</a>
+				<div id="img-container">
+				<img id="header-img" class="logo" src="https://c1.staticflickr.com/2/1972/45430144741_3610040fc3_b.jpg" alt="TM logo" style="width:200px;height:auto;">
+				</div>
 			</div>
 			<div class="right">
-			<a class="nav-link" id="aboutUs">About Us</a>
-			<a class="nav-link" id="services">Our services</a>
-			<a class="nav-link" id="meet">Let's Meet!</a>
+				<a class="nav-link" href="#aboutUs">About Us  </a>
+				<a class="nav-link" href="#services">Our services  </a>
+				<a class="nav-link" href="#contact">Let's Meet!  </a>
 			</div>
 		</nav>
-		<div id="img-container">
-		<img id="header-image" src="https:    ">
-		</div>
 	</header>
-	<div id="main">
-	  <h1 id="title">Planning a wedding or special event? Let us help!</h1>
-			<h2>Planning the Ultimate Celebration is Our Passion</h2>
+	<h1 class="title">Planning a wedding or special event? Let us help!</h1>
+		<h2 class="title">Planning the Ultimate Celebration is Our Passion</h2>
+	<div class="container">
 <!--About Us Section -->
 		<div class="aboutUs">
 			<div>
-				<h3>Event Professionals</h3>
+				<h3 id="aboutUs">Event Professionals</h3>
 					<p>We are a full-service wedding and event planning boutique specializing in one-of-a-kind events. 
 					We have more than 15 years of experience where we've deloped the art of event planning and design. Our team
 					of professionals are passionate about what they do. Whether your special day is large and lavish, elegant and intimate
-					or rustic chic, our wedding day design will reflect your vision and style.
+					or rustic chic, our wedding day design will reflect your vision and style. Years of planning hundreds of events have 
+					allowed us to develop invaluable venue and vendor relationships and created a detailed planning process used by the entire team to 
+					ensure no detail is overlooked.
 					</p>
-					<h4>Hiring an Event Coordinator</h3>
+					<h4>Hiring an Event Coordinator</h4>
 						<p>Hiring the right wedding planner is one of the key investments you can make when bringing your special day to life.
 							Our goal is to always exceed expectations. We are committed to giving you an unforgettable experience and creating a 
 							flawless event.</p>
 						<p>Check out this video for some of David Tutera's tips on hiring the right wedding planner:</p>
-						<iframe width="640" height="360" src="https://www.youtube.com/embed/ExKLBCEoTsw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+						<center>
+						<iframe id="video" width="640" height="360" src="https://www.youtube.com/embed/ExKLBCEoTsw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+						</center>
 				</div>
 		</div>	
-		<div class="Services">
-			<h3>Planning Your Perfect Wedding</h4>
+		<div class="services">
+			<h3 id="services">Planning Your Perfect Wedding</h3>
 				<p>Our services are fully customized based on our clients needs. Some of the services we offer include:
 					<ul>
-						<li>Luxury Wedding Design, Full Planning, Coordination and Management</li>
-						<li>On-site Management and "Day of" Production</li>
-						<li>Ceremony & Reception Coordination and Management</li>
-						<li>Welcome Receptions</li>
-						<li>Rehearsal Dinners</li>
-						<li>Post-Wedding Brunches</li>
-						<li>Bridal Showers</li>
-						<li>Private Parties</li>
-						<li>Baby Showers and more</li>
+						<li class="list">Luxury Wedding Design, Full Planning, Coordination and Management</li>
+						<li class="list">On-site Management and "Day of" Production</li>
+						<li class="list">Ceremony & Reception Coordination and Management</li>
+						<li class="list">Welcome Receptions</li>
+						<li class="list">Rehearsal Dinners</li>
+						<li class="list">Post-Wedding Brunches</li>
+						<li class="list">Bridal Showers</li>
+						<li class="list">Private Parties</li>
+						<li class="list">Baby Showers</li>
+						<li class="list">Fundraisers	and more</li>
 					</ul>
 				</p>
 		</div><!--closes div class services-->	
 <!--Contact Section -->
-		<div id="submit">
-			<h3>Interested in Working With Us</h3>
-			<form id="form" method="POST" action="   ">
-				<input type="email" id="email" name="email" placeholder="Enter your email for a Free Consultation"></input>
-				<br/>
-				<input type="submit" id="submit">
-			</form>
-		</div>
+		<div id="contact">
+			<h3 id="contact">Interested in Working With Us?</h3>
+				<p>Tell us your story! We'd love to help you start planning your upcoming event! Please submit your email below to set up a free consultation.</p>
+		</div>		
+	</div> <!--close div container-->					
+		<form id="form" method="POST" action="   " class="submit">
+			<input type="email" id="email" name="email" placeholder="Enter your email"></input>
+			<br/>
+			<div class="submit">
+      <input type="submit" id="submit" class="submitbutton" type="submit"></input>
+    </div>
+		</form>
 <!-- footer -->
-		<div id="footer">
-			<h3>TM Wedding Planning</h3>
-				<div id="links">
-					<a href="#">Contact Us</a>
-					<a href="#">Gallery</a>
-					<a href="#">Package Specials</a>
-				</div>
+	<div id="footer">
+		<div id="left" class="footer">
+		  <p>TM Wedding Planning</p>
+			<div id="links" class="right">
+				<a class="nav-link" href="#">Contact Us</a>
+				<a class="nav-link" href="#">Gallery</a>
+				<a class="nav-link" href="#">Package Specials</a>
+			</div>
 		</div>
+	</div> <!--close footer-->
 	 
 	 
    
